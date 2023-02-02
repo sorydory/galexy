@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding:0; box-sizing: border-box;}
+        li{list-style:none;}
+        div {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        div ul li {
+            width: 25%;
+            height: 200px;
+            background-color: palevioletred;
+            border: 3px solid #333;
+        }
+        div ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* 1024이하일때 */
+        @media screen and (max-width: 1024px) {
+            div ul li {
+                width: 33.3333%;
+            }
+        }
+        /* 768이상일때 */
+        @media screen and (min-width: 768px) {
+            div ul li {
+                width: 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+            <li>list7</li>
+            <li>list8</li>
+            <li>list9</li>
+            <li>list10</li>
+            <li>list11</li>
+            <li>list12</li>
+        </ul>
+    </div>
+</body>
+</html>

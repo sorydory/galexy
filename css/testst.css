@@ -1,0 +1,39 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { color: inherit; text-decoration: none;}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+body {
+    font-size: 14px;
+    font-family: "맑은 고딕",Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: rgb(31, 25, 25);
+    background-color: #ccc;
+}
+header img {
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+#head {
+    background-color:tan ;
+    position: absolute;
+    max-width: 1200px;
+    top:10px;
+}
+#headmenu {
+    background:url('../img/header_bg.png');
+    background-size: cover;
+}
+button {
+    background-color: blueviolet;
+    border:none;
+    padding:10px 5px;
+    color:#fff;
+}

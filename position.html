@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {list-style: none;}
+        div ul {
+            float: right;
+        }
+        div ul li {
+            float: left;
+            padding: 0 20px;
+            height: 30px;
+            border-right :1px solid #333
+        }
+        div ul div {
+            opacity: 0;
+        }
+        div ul li:hover {
+            color: blue;
+            font-weight: bold;
+            
+        }
+        div ul li:hover div {
+            opacity: 1;
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu1
+                <div>집에</div>
+            </li>
+            <li>menu2
+                <div>갈시간이</div>
+            </li>
+            <li>menu3 
+                <div>얼마남지</div>
+            </li>
+            <li>menu4
+                <div>않았다..</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

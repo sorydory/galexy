@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*변수등록*/
+        :root {
+            --main-color: pink;
+            --small-font:12px;
+            --middle-font:18px;
+            --large-font:24px;
+            --default-font:14px;
+            --default-padding:16px;
+            --content-width:1200px;
+            --default-font-color:#222;
+            --light-font-color:#666;
+            --vlight-font-color:#eee;
+        }
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        li{ list-style: none;}
+        body{
+            font-size: var(--default-font);
+            line-height: 1.6;
+            color: var(--default-font-color);
+        }
+        #wrap {
+            width: 100%;
+            max-width: var(--content-width);
+            margin: 0 auto;
+        }
+        .flexContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header {
+            background-color: var(--main-color);
+            color:#fff;
+            height: 80px;
+        }
+        header li {
+            padding: var(--default-padding);
+        }
+        section {
+            width: 100%;
+            height: 200px;
+            border-bottom: 1px solid var(--main-color);
+            padding: calc( var(--default-padding) * 2 );
+
+        }
+        section h2 {
+            color: var(--main-color);
+            padding-bottom: var(--default-padding);
+        }
+        footer {
+            font-style: normal;
+        }
+        h1 {
+            font-size: var(--large-font);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="flexContainer">
+            <h1>green</h1>
+            <ul class="flexContainer">
+                <li>ment1</li>
+                <li>ment2</li>
+                <li>ment3</li>
+                <li>ment4</li>
+            </ul>
+        </header>
+        <main>
+            <section>
+                <h2>제목입니다.</h2>
+                <p>내용입니다.</p>
+            </section>
+            <section>
+                <h2>제목입니다.</h2>
+                <p>내용입니다.</p>
+            </section>
+
+            <section>
+                <h2>제목입니다.</h2>
+                <p>내용입니다.</p>
+            </section>
+            <section>
+                <h2>제목입니다.</h2>
+                <p>내용입니다.</p>
+            </section>
+        </main>
+        <footer class="flexContainer">
+            <address>주소: 울산 남구 삼산중로 100번길 26</address>
+            <h1>green</h1>
+        </footer>
+    </div>
+</body>
+</html>
